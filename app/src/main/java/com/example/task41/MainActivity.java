@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Task
 
         if (title.isEmpty() || description.isEmpty() || date.isEmpty()) {
             Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
-            return; // Exit the method if any field is empty
+            return;
         }
 
         TaskModel task = new TaskModel(0, title, description, date);
